@@ -14,7 +14,7 @@ services:
       - 'DATABASE_PASSWORD=postgres'
     tty: true
     stdin_open: true
-    depends_on :
+    depends_on:
       - db
     links:
       - db
