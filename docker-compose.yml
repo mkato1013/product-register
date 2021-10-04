@@ -12,7 +12,6 @@ services:
       - '.:/product-register'
     environment:
       - 'DATABASE_PASSWORD=postgres'
-
     tty: true
     stdin_open: true
     depends_on:
@@ -22,8 +21,6 @@ services:
 
   db:
     image: postgres
-    ports:
-      - '5432'
     volumes:
       - 'db-data:/var/lib/postgresql/data'
     environment:
